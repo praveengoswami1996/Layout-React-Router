@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+.Link{
+    font-size: 24px;
+    color: #333;
+    padding: .5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__postdetail {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__postdetail-container {
+    background: #fff;
+    padding: .5rem;
+    border: 10px double green;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app__postdetail-img {
+    background-color: #eee;
+    float: left;
+    width: 300px;
+    height: 300px;
+    padding: 1rem;
+    margin: .5rem;
+    border: 1px solid lightgray;
+    border-radius: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.app__postdetail-img img{
+    width: 100%;
+    height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__postdetail-desc{
+    padding: 1rem;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.app__postdetail-desc span{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*************MEDIA QUERIES*****************/
+
+@media screen and (max-width: 790px) {
+    .app__postdetail {
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Link{
+        display: block;
+    }
+    .app__postdetail {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .app__postdetail-img {
+        width: 250px;
+        height: 250px;
+    }
 }
